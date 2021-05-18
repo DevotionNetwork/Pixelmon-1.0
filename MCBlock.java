@@ -61,7 +61,7 @@ public class MCBlock{
 	
 	public void render( int side ){
 		switch(side){
-			case BOT:
+			case:
 				glNormal3d(0,0,-1);
 				glTexCoord2f(0,0);
 				glVertex3d(x+SIDE,y+SIDE,z);
