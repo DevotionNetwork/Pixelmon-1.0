@@ -14,8 +14,6 @@ public class MCCamera{
 
 		float widthHeightRatio = (float) width / height;
 		
-		gluPerspective(45, widthHeightRatio, 0.1f, (float)(1e3 * MCBlock.SIDE));
-		
 		glRotated(-degz ,1,0,0);
 		glRotated(-degx +90 ,0,0,1);
 		glTranslated(-x,-y,-z);
