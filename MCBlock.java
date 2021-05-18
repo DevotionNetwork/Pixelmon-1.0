@@ -19,7 +19,6 @@ public class MCBlock{
 
 	public static final double SIDE = 16;
 
-	public static final int BOT = 0;
 	public static final int LEFT = 1;
 	public static final int RIGHT = 2;
 	public static final int FRONT = 3;
@@ -28,7 +27,6 @@ public class MCBlock{
 
 	public MCBlock(double x, double y, double z, String texture){
 		this.x = x; this.y = y; this.z = z;
-		q[BOT] = 	new MCTexturedQuad(this, BOT, texture);
 		q[LEFT] = 	new MCTexturedQuad(this, LEFT, texture);
 		q[RIGHT] = 	new MCTexturedQuad(this, RIGHT, texture);
 		q[FRONT] = 	new MCTexturedQuad(this, FRONT, texture);
@@ -40,7 +38,6 @@ public class MCBlock{
 	public MCBlock(double x, double y, double z, String[] t){
 		this.x = x; this.y = y; this.z = z;
 		int i = 0;
-		q[BOT] = 	new MCTexturedQuad(this, BOT, t[i++]);
 		q[LEFT] = 	new MCTexturedQuad(this, LEFT, t[i++]);
 		q[RIGHT] = 	new MCTexturedQuad(this, RIGHT, t[i++]);
 		q[FRONT] = 	new MCTexturedQuad(this, FRONT, t[i++]);
